@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 function Users({ users }) {
   return (
     <ul>
@@ -9,7 +11,12 @@ function Users({ users }) {
             </h5>
             <p>{user.email}</p>
           </div>
-          <img src={user.avatar} alt={user.first_name} />
+          <Image
+            src={user.avatar}
+            alt={user.first_name}
+            width={100}
+            height={100}
+          />
         </li>
       ))}
     </ul>

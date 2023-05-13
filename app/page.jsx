@@ -11,10 +11,7 @@ async function IndexPage() {
   console.log(users)
 
   return (
-    <div>
-      <h1>Index Page</h1>
       <Users users={users} />
-    </div>
   )
 }
 
